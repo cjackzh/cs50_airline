@@ -16,7 +16,7 @@ class Flight(models.Model):
     duration = models.IntegerField()
 
     def __str__(self):
-        return f"{self.id}: {self.origin} to {self.destination}"
+        return f"{self.id}: {self.origin} to {self.destination}, time spent {self.duration}"
 
 
 class Passenger(models.Model):
